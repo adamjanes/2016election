@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The 2016 Election</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+
+    <link rel="stylesheet" href="css/plottable.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top custom-nav" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#home">The 2016 Election</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#intro" class="page-scroll">Introduction</a></li>
+                                <li><a href="#national" class="page-scroll">Nationwide Data</a></li>
+                                <li><a href="#statewide" class="page-scroll">Statewide Data</a></li>
+                                <li><a href="#wordcloud" class="page-scroll">Word Clouds</a></li>
+                                <li><a href="#sentiment" class="page-scroll">Sentiment Analysis</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav" style="float:right">
+                        <li style="margin-right:50px">
+                            <div id="legendR" style="float:right"></div>
+                        </li>
+                        <li style="margin-right:30px">
+                            <div id="legendD" style="float:right"></div>
+                        </li>
+                    </ul>
+
+            </div>
+
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div id="home" class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>The 2016 Election</h1>
+                        <h3>A Predictive Analysis</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <div id="intro" class="content-section-b">
+
+        <div class="container">
+            <hr class="section-heading-spacer" style="float:none">
+            <div class="clearfix"></div>
+            <h2>Harnessing the Wisdom of the Crowd</h2>
+            <p style="text-align:center;margin-left:100px;margin-right:100px">Although polls are a common performance metric in the presidential race, their results do not always
+                reflect the actual chances of each candidate winning. Months before any votes are cast, candidates can
+                lead the field in polling, but never have a true shot at becoming their party’s nominee. Prediction
+                markets offer an interesting alternative to keep track of how candidates are doing over the course of
+                an election cycle. </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="logo" src="img/predictit.png"/>
+                    <p class="description">PredictIt.org offers an online marketplace for trading contracts, paying out based on the
+                        outcome of political events. For the presidential primaries, markets exist for all state and
+                        national elections. Shares are traded for each candidate, paying $1 only if they win. The resulting
+                        prices infer the chance of each candidate winning.</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="logo" src="img/betfair.png"/>
+                    <p class="description">Betfair.com is a British gambling website that allows people to lay their own
+                        odds, and place bets based on the bid-ask spreads of its users. Betfair is primarily involved
+                        in betting on sports, but also caters to political bets. Betfair's odds provide predictive data at the
+                        national level between the Republican and Democratic candidates.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <img class="logo" src="img/oddschecker.png"/>
+                    <p class="description">OddsChecker.com collates betting odds from a range of different bookmakers.
+                        Bookmakers act as a market-maker in a traditional stock market environment - they set their
+                        odds, and adjust them according to the flow of the market. US Political events are a popular
+                        subject of wagers, so markets exist to predict the presidential primaries.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Section: parallax 1 -->
+    <section id="parallax1" class="parallax" data-stellar-background-ratio="0.5"></section>
+    <!-- /Section: parallax 1 -->
+
+
+
+    <div id="national" class="content-section-a">
+
+        <div class="container">
+
+            <hr class="section-heading-spacer" style="float:none">
+            <div class="clearfix"></div><br>
+            <div>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a data-toggle="pill" href="#repNational">Republicans</a></li>
+                    <li><a data-toggle="pill" href="#demNational">Democrats</a></li>
+                </ul>
+            </div>
+
+            <div class="row" style="margin-top:30px">
+                <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading">Charting Progress</h2>
+                </div>
+                <div class="col-lg-7 col-sm-6">
+                    <div class="form-group">
+                        <select id="line-select" class="form-control" style="float:left">
+                            <option selected class='option' value='PredictIt'>PredictIt</option>
+                            <option class='option' value='Betfair'>Betfair</option>
+                            <option class='option' value='Bookie'>OddsChecker</option>
+                        </select>
+                    </div>
+                    <div style="float:right">
+                        <button id="btn-events" type="button" class="btn btn-button-info" onclick="toggleEvents()"
+                        style="margin-top:15px;margin-right:13px">Show Key Events</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tab-content">
+                    <div id="repNational" class="tab-pane fade in active">
+                        <div class="col-lg-5 col-sm-6" >
+                            <p>Marco Rubio sailed into January 2016 having never polled above 15%, yet prediction
+                                markets labelled him as the clear frontrunner against all other opponents. Ben Carson
+                                was practically ignored by all of the prediction sites, despite polling significantly
+                                higher than Bush and Christie before dropping out. Donald Trump had been consistently
+                                beating the other candidates in polling by a 20-point margin in early-2016, but was
+                                only priced as having a 20% chance of winning.</p>
+
+                            <p>As the race moved on, the markets continually realigned, as speculation around
+                                candidates shifted. Some clear events led to spikes for different candidates, as
+                                investors hurried to change their minds.</p>
+                        </div>
+                        <div id="republican-line" class="col-lg-7 col-sm-6" ></div>
+                    </div>
+
+                    <div id="demNational" class="tab-pane fade">
+                        <div class="col-lg-5 col-sm-6">
+                            <p>Although Bernie Sanders closed the gap in polling throughout the primary process,
+                                Hillary Clinton was viewed as an unassailable candidate throughout the election process.
+                                In November, Clinton’s status as the presumptive nominee allowed for only a small chance
+                                of around 20% that something could happen to derail her campaign.</p>
+
+                            <p>Different markets disagreed with the scale of a threat that a surging Sanders campaign
+                                could pose to Clinton. Although punters on PredictIt and OddsChecker remained steadfast in
+                                their belief that Clinton would win the nomination, Betfair shortened Sanders’ odds
+                                significantly for a substantial period of time.</p>
+                        </div>
+                        <div id="democrat-line" class="col-lg-7 col-sm-6"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section: parallax 2 -->
+    <section id="parallax2" class="parallax" data-stellar-background-ratio="0.5"></section>
+    <!-- /Section: parallax 2 -->
+
+	<a  name="services"></a>
+    <div id="statewide" class="content-section-b">
+
+        <div class="container">
+            <hr class="section-heading-spacer" style="float:none">
+            <div class="clearfix"></div>
+            <br>
+            <div>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a data-toggle="pill" href="#republicanStates">Republicans</a></li>
+                    <li><a data-toggle="pill" href="#democratStates">Democrats</a></li>
+                </ul>
+            </div>
+
+            <div class="row" style="margin-top:30px">
+                <div class="col-lg-6 col-sm-6" style="margin-top:10px">
+                    <p>
+                        <label for="amount">Date: </label>
+                        <input type="text" id="amount" style="border: 0; font-weight: bold;" />
+                    </p>
+                    <div id="slider-range"></div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading">Painting a Clear Picture</h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="tab-content">
+                    <div id="republicanStates" class="tab-pane fade in active">
+                        <div id="repChoropleth" class="col-lg-5 col-sm-6"></div>
+                        <div class="col-lg-5 col-sm-6 col-lg-offset-2">
+                            <p style="font-size: 22px">In the Republican race, Donald Trump has performed best in contests on the East coast,
+                                while Ted Cruz has had his finest showings in rural and Southern states. </p>
+
+                            <p style="font-size: 22px"> Marco Rubio was never predicted to win any early states, despite being hotly tipped to win
+                                nationwide. His win in Minnesota, which was a surprise result for PredictIt
+                                users, together with Kasich’s victory in Ohio, were the only states that were not
+                                dominated by Trump or Cruz.</p>
+                        </div>
+                    </div>
+
+                    <div id="democratStates" class="tab-pane fade">
+                        <div id="demChoropleth" class="col-lg-5 col-sm-6"></div>
+                        <div class="col-lg-5 col-sm-6 col-lg-offset-2">
+                            <p style="font-size: 22px">On the Democratic side, Hillary Clinton enjoyed a significant advantage in Southern states,
+                            and bested Bernie Sanders in more well-populated areas.</p>
+
+                            <p style="font-size: 22px">The North-South divide is evident from the map to the right, where Sanders can be seen to have little chance at any point
+                            in winning in the South, although Northern states generally fell to him.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!-- /.content-section-a -->
+
+    <!-- Section: parallax 3 -->
+    <section id="parallax3" class="parallax" data-stellar-background-ratio="0.5"></section>
+    <!-- /Section: parallax 3 -->
+
+    <div id="wordcloud" class="content-section-a">
+
+        <div class="container">
+            <hr class="section-heading-spacer" style="float:none">
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <h2 class="section-heading">Debate Analysis</h2>
+                    <p class="lead" style="margin-bottom:0px">How do the issues that the candidates care about change over time? Is there a relationship between these issues and their polling results?</p>
+                    <br>
+                    <p class="lead" style="margin-bottom:0px"> Brush the timeline below to explore</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="candidate"> </label>
+                            <select class="form-control" id="candidate" onchange = "update()" style="width: 100%; margin-top:0px">
+                            </select>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div style="float:right">
+                                <button id="btn-events" type="button" class="btn btn-button-info" onclick="candidateLine.showDebateDates()"
+                                        style="margin-top:15px;margin-right:13px">Show Debate Dates</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id = "predictor-line"></div>
+                    <h2 id="word-time-h2">Word use across time</h2>
+                    <svg id="word-time"></svg>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <p style="margin-left:40px; width:500px">
+                        <label for="amount2">Date: </label>
+                        <input type="text" class="amountCloud" data-index="0" value="2015-12-01"
+                               readonly style="width:150px;border:0; background-color:#f8f8f8; font-weight:bold;"/>
+                        -
+                        <input type="text" class="amountCloud" data-index="1" value="2016-05-01" readonly style="border:0; background-color:#f8f8f8; font-weight:bold;"/>
+                    </p>
+                    <div id="slider-range2" style="margin-left:40px"></div>
+                    <div id="word-cloud"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <!-- Section: parallax 4 -->
+    <section id="parallax4" class="parallax" data-stellar-background-ratio="0.5"></section>
+    <!-- /Section: parallax 4 -->
+
+    <div id="sentiment" class="content-section-b">
+
+        <div class="container">
+            <hr class="section-heading-spacer" style="float:none">
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <h2 class="section-heading">Presidential Debate speech  analysis</h2>
+                    <p class="lead"> The Presidential Debates have always been an integral part of the election. Critics have commented that the debates "too often turn on stumbles, errors and style over substance." How do candidates' debate styles change over time?</p>
+                    <p class="lead"> Transcripts of every candidate in every debate from December until now were analyzed. The <b>polarity score</b> is a float within the range [-1.0, 1.0]. For example, a sentence like "Bicycles are amazingly simple to use" would get a polarity score of 0.4. The <b>subjectivity score</b> is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective.</p>
+                    <p class="lead"> The <b>percentage of short sentences</b> is encoded by the radius of the circles. The more often a candidate uses a short sentence, the bigger the circle is. A short sentence has 5 or less words</p>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <div id="speech-style"></div>
+
+                    <div id="time-line"></div>
+                    <div align="center" style="width: 600px">
+                        <span id="prev"> PREV   </span>
+                        <span id="current"></span>
+                        <span align="right" id="next">    NEXT</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <!-- External JS libraries -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.tip.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/queue.min.js"></script>
+    <script src="js/topojson.js"></script>
+    <script src="js/plottable.min.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/stellar.js"></script>
+
+
+    <!-- Our own JS code -->
+    <script src="js/main.js"></script>
+    <script src="js/lineGraph.js"></script>
+    <script src="js/timeLine.js"></script>
+    <script src="js/candidateLineGraph.js"></script>
+    <script src="js/prepareData.js"></script>
+    <script src="js/choropleth.js"></script>
+    <script src="js/legend.js"></script>
+    <script src="js/wordTime.js"></script>
+    <script src="js/wordCloud2.js"></script>
+    <script src="js/wordStyle.js"></script>
+    <script src="js/debateMain.js"></script>
+    <script src="js/candidateLineGraph.js"></script>
+    <script src="js/scrollElements.js"></script>
+
+    <script>
+
+
+</script>
+
+</body>
+
+</html>

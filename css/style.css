@@ -1,0 +1,266 @@
+
+h1, h2{
+    text-align: center;
+}
+
+.logo{
+    width:218px;
+    height:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    text-align: left;
+}
+
+.form-control {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.picture{
+    width: 50px;
+    border-style:solid;
+    border-width:4px;
+    border-radius:50%;
+    margin-right:2px;
+    visibility: visible;
+    opacity:1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.panel-body {
+    height: 170px;
+}
+
+.legend rect {
+    fill:white;
+    stroke:black;
+    opacity:0.8;}
+
+p {
+    display: block;
+    padding-top: 9px;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.btn-button-info, .btn-button-info.button-clicked:hover {
+    background-color: transparent;
+    border-radius: 0;
+    color: #337ab7;
+    border: 1px solid #337ab7;
+}
+.btn-button-info:hover, .button-clicked, .button-clicked.btn-button-info:focus {
+    background-color: #337ab7;
+    color: #fff
+}
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 11px;
+}
+
+.line {
+    fill: none;
+    stroke: #1C9A3D;
+    stroke-width: 1.5px;
+}
+
+.tooltip-circle {
+    fill: #96AB96;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Tooltip */
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    display: inline;
+    padding: 6px;
+    font: 13px sans-serif;
+    background-color: #000;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: #fff;
+}
+
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.dot {
+    r:5;
+    fill:grey;
+}
+
+
+
+.panel-heading {
+    color: #761c19;
+}
+
+
+/* plottable styling */
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+/* styling*/
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+/*toggle button*/
+.toggle-button { background-color: white; margin: 5px 0; border-radius: 20px; border: 2px solid #D0D0D0; height: 24px; cursor: pointer; width: 50px; position: relative; display: inline-block; user-select: none; -webkit-user-select: none; -ms-user-select: none; -moz-user-select: none; }
+.toggle-button button { cursor: pointer; outline: 0; display:block; position: absolute; left: 0; top: 0; border-radius: 100%; width: 30px; height: 30px; background-color: white; float: left; margin: -3px 0 0 -3px; border: 2px solid #D0D0D0; transition: left 0.3s; }
+.toggle-button-selected { background-color: #83B152; border: 2px solid #7DA652; }
+.toggle-button-selected button { left: 26px; top: 0; margin: 0; border: none; width: 24px; height: 24px; box-shadow: 0 0 4px rgba(0,0,0,0.1); }
+
+
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+.navbar {
+    border-color: transparent;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.custom-nav {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.pic-top {
+    visibility: hidden;
+    opacity:0;
+}
+
+
+
+/* ==========================
+Parallax
+============================= */
+
+.parallax {
+    height: 500px;
+}
+
+#parallax1{
+    background-image: url(../img/trump_rally.jpg);
+    padding-top: 150px;
+    padding-bottom: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    z-index:120;
+}
+
+
+#parallax2{
+    background-image: url(../img/clinton_rally.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    z-index:120;
+}
+
+#parallax3{
+    background-image: url(../img/sanders_rally.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    z-index:120;
+}
+
+#parallax4{
+    background-image: url(../img/bush_rally.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    z-index:120;
+}
+
